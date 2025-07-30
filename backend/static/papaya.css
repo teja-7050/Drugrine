@@ -1,0 +1,195 @@
+/* Base Papaya Viewer Container */
+.papaya {
+    width: 45%; /* Reduce width for side-by-side display */
+    height: 45%; /* Reduce height for side-by-side display */
+    margin: 2%; /* Add margin for spacing between viewers */
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/* Message displayed when JavaScript is disabled */
+.papaya:before {
+    position: relative;
+    content: "Papaya requires JavaScript...";
+    display: block;
+    top: 45%;
+    color: red;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/* Fullscreen adjustments */
+.papaya-fullscreen {
+    height: 100%; /* Maintain fullscreen behavior */
+}
+
+/* Toolbar layout */
+.papaya-toolbar {
+    text-align: left;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.papaya-toolbar ul {
+    margin: 0;
+    list-style: none;
+}
+
+.papaya-toolbar input[type=file] {
+    text-align: right;
+    display: none;
+}
+
+/* Kiosk control layout */
+.papaya-kiosk-controls {
+    position: relative;
+    margin: 5px auto;
+    list-style: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.papaya-kiosk-controls ul {
+    list-style: none;
+}
+
+.papaya-kiosk-controls button {
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    font-size: 14px;
+    height: 25px;
+    background-color: lightgray;
+}
+
+/* Increment/Decrement Buttons */
+.papaya-control-increment,
+.papaya-main-increment,
+.papaya-main-decrement {
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    font-size: 14px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: "Courier New", Courier, monospace;
+    background-color: darkgoldenrod;
+    border: 1px solid white;
+    outline: 0;
+}
+
+/* Swap/Center/Origin Buttons */
+.papaya-main-swap,
+.papaya-main-goto-center,
+.papaya-main-goto-origin {
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    font-size: 14px;
+    height: 25px;
+    background-color: darkgoldenrod;
+    border: 1px solid white;
+    outline: 0;
+}
+
+/* Slider Controls */
+.papaya-slider-slice {
+    padding: 0 5px;
+    display: inline;
+}
+
+.papaya-slider-slice span {
+    font-size: 14px;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+.papaya-slider-slice button {
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    vertical-align: middle;
+    font-size: 14px;
+    height: 25px;
+    background-color: lightgray;
+}
+
+/* Control Bar Labels */
+.papaya-controlbar-label {
+    color: #000;
+}
+
+/* Menus */
+.papaya-menu {
+    width: 220px;
+    background: #222;
+    z-index: 100;
+    position: absolute;
+    border: solid 2px darkgray;
+    padding: 4px;
+    margin: 0;
+}
+
+.papaya-menu li {
+    font-size: 12px;
+    font-family: sans-serif;
+    padding: 4px 2px;
+    color: #b5cbd3;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.papaya-menu-label {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 2px 8px;
+    cursor: pointer;
+    vertical-align: text-bottom;
+}
+
+.papaya-menu-titlebar {
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 3px 8px 0 8px;
+    cursor: default;
+    vertical-align: text-bottom;
+    color: white;
+}
+
+/* Menu Hover Effects */
+.papaya-menu-hovering {
+    background-color: #444;
+}
+
+/* Viewer Canvas */
+.papaya-viewer {
+    line-height: 1;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.papaya-viewer div,
+.papaya-viewer canvas {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: sans-serif;
+}
+
+.papaya-viewer canvas {
+    cursor: crosshair;
+}

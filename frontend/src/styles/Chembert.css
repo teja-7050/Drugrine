@@ -1,0 +1,124 @@
+/* PredictPage.css */
+.container {
+    padding: 30px;
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .heading {
+    font-size: 24px;
+    color: #90caf9;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .centerBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .contentBox {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .dropdown {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+  
+  .infoBox {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+  }
+  
+  .infoTitle {
+    font-size: 18px;
+    color: #90caf9;
+    margin-bottom: 10px;
+  }
+  
+  .infoText {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #90caf9;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .resultBox {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid #555;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .resultTitle {
+    font-size: 16px;
+    color: #90caf9;
+    margin-bottom: 10px;
+  }
+  
+  .resultItem {
+    font-size: 15px;
+    color: #bbdefb;
+    background-color: #263238;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    list-style-type: none;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

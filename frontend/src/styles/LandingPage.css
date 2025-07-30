@@ -1,0 +1,78 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* https://www.ddw-online.com/wp-content/uploads/2023/03/AI-RDD.jpg' */
+    background-image: url('https://media.licdn.com/dms/image/v2/D4E12AQGkC4tvBd4Fng/article-cover_image-shrink_720_1280/B4EZX2hgPmHcAM-/0/1743597739298?e=2147483647&v=beta&t=979bSSEIrlRAciBVFk73W4vhU-oHz3llSVQSlX2C-1c');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .landing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .landing-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .landing-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .landing-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .landing-button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .landing-button {
+    background: linear-gradient(90deg, #003366, #50C878);
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    min-width: 160px;
+    text-align: center;
+  }
+  
+  .landing-button:hover {
+    background: linear-gradient(90deg, #0056b3, #00aaff);
+    transform: scale(1.05);
+  }
+  

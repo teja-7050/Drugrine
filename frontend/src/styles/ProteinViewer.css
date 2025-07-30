@@ -1,0 +1,32 @@
+/* ProteinViewer.css */
+
+.viewer-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 400px; /* Ensure a minimum height for the viewer */
+    overflow: hidden; /* Prevent potential overflow issues from 3Dmol */
+    display: flex;
+    justify-content: center; /* Center the viewer horizontally */
+    align-items: center; /* Center the viewer vertically */
+  }
+  
+  .viewer-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #1e1e1e; /* Dark background for the viewer */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+    overflow: hidden;
+    position: relative; /* For any potential absolute positioned elements within */
+  }
+  
+  /* Optional: Add styles for loading or error states if handled here */
+  .viewer-loading {
+    color: #a8a8a8;
+    font-style: italic;
+  }
+  
+  .viewer-error {
+    color: #ff6b6b;
+    font-weight: bold;
+  }

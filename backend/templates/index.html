@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" type="text/css" href="{{ request.url_for('static', path='papaya.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ request.url_for('static', path='papaya.js') }}"></script>
+
+    <title>Papaya Viewer</title>
+</head>
+
+<body style="height: 100%; width: 100%;">
+    <div id="papaya1" class="papaya"
+         data-params='{"images": ["{{ request.url_for('original_nii', path=file1_path) }}"]}'>
+    </div>
+
+    <div id="papaya2" class="papaya"
+         data-params='{"images": ["{{ request.url_for('original_nii', path=file1_path) }}", "{{ request.url_for('predicted_nii', path=file2_path) }}"]}'>
+    </div>
+</body>
+</html>

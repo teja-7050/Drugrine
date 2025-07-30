@@ -1,0 +1,6 @@
+.rdkit-canvas {
+    width: var(--canvas-width);
+    height: var(--canvas-height);
+    background-color: #fff;
+  }
+  
